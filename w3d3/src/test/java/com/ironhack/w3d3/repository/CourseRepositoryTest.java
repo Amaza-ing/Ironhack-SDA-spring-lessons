@@ -137,7 +137,7 @@ class CourseRepositoryTest {
 
     @Test
     public void nativeFindAllWhereClassroomAndHoursParams_validParams_correctCourses() {
-        List<Course> courseList = courseRepository.nativeFindAllWhereClassroomAndHoursNamedParams("B1", 150);
+        List<Course> courseList = courseRepository.nativeFindAllWhereClassroomAndHoursParams("B1", 150);
         System.out.println(courseList);
         assertEquals(3, courseList.size());
     }
