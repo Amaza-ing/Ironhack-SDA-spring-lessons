@@ -1,5 +1,6 @@
 package com.ironhack.w4d1.controller.impl;
 
+import com.ironhack.w4d1.controller.interfaces.ITeacherController;
 import com.ironhack.w4d1.model.Teacher;
 import com.ironhack.w4d1.repository.TeacherRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +14,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api")
-public class TeacherController {
+public class TeacherController implements ITeacherController {
 
     @Autowired
     TeacherRepository teacherRepository;
