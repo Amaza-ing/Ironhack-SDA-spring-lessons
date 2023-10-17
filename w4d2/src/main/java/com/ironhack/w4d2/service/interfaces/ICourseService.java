@@ -9,4 +9,12 @@ public interface ICourseService {
     public Course getCourseById(String course);
 
     public List<Course> getCourseByHoursAndClassroom(String classroom, Optional<Integer> hours);
+
+    void updateCourse(Course course, String id);
+
+    void updateCourseHours(Integer hours, String id);
+
+    void updateCourseClassroom(String classroom, String id);
+
+    void deleteCourse(String id);
 }
